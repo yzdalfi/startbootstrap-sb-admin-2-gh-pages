@@ -41,232 +41,383 @@
       firebase.analytics();
     </script>
   </head>
-  <body>
-    <body id="page-top">
-      <!-- Page Wrapper -->
-      <div id="wrapper">
-    
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-    
-          <!-- Sidebar - Brand -->
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <div class="sidebar-brand-icon rotate-n-15">
-              <i class="fas fa-laugh-wink"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">SI Akademik</div>
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">SI Akademik</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
           </a>
-    
-          <hr class="sidebar-divider my-0">
-    
-          <!-- Nav Item - Dashboard -->
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <i class="fas fa-fw fa-tachometer-alt"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-    
-          <hr class="sidebar-divider">
-    
-   
-          <li class="nav-item">
-            <a class="nav-link" href="matakuliah.html">
-              <i class="fas fa-fw fa-chart-area"></i>
-              <span>Mata Kuliah</span>
-            </a>
-          </li>
-    
-          <li class="nav-item">
-            <a class="nav-link" href="dosen.html">
-              <i class="fas fa-fw fa-table"></i>
-              <span>Dosen</span>
-            </a>
-          </li>
-    
-          <li class="nav-item">
-            <a class="nav-link" href="mengajar.html">
-              <i class="fas fa-fw fa-table"></i>
-              <span>Mengajar</span>
-            </a>
-          </li>
-        </ul>
-        <!-- End of Sidebar -->
-    
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-          <!-- Main Content -->
-          <div id="content">
-    
-            <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-              <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-              </button>
-    
-              <ul class="navbar-nav ml-auto">
-                <div class="topbar-divider d-none d-sm-block"></div>
-    
-                <!-- User Info -->
-                <li class="nav-item dropdown no-arrow">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrator</span>
-                    <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Heading -->
+        <div class="sidebar-heading">Menu</div>
+
+        <!-- Nav Items -->
+        <li class="nav-item">
+          <a class="nav-link" href="matakuliah.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Mata Kuliah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dosen.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Dosen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mengajar.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Mengajar</span>
+          </a>
+        </li>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Administrator</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
+                  />
+                </a>
+
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Ubah Password
                   </a>
-    
-                  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                      Ubah Password
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                      <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                      Logout
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-            <!-- End of Topbar -->
-    
-            <!-- Begin Page Content -->
-            <div class="container-fluid">
-              <h1 class="h3 mb-4 text-gray-800">
-                Dosen
-                <a href="add_dosen.html" class="btn btn-success btn-user">Tambah Baru</a>
-              </h1>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <h1 class="h3 mb-4 text-gray-800">
+              Info Mengajar
+              <a href="add_mengajar.html" class="btn btn-success btn-user"
+                >Tambah Baru</a
+              >
+            </h1>
+            <hr />
+
+            <form class="user">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="uid"
+                  placeholder="ID"
+                  readonly
+                />
+              </div>
+
+              <div class="form-group">
+                <select id="kode_dosen" class="form-control">
+                  <option value="">Pilih Dosen</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select id="kode_matakuliah" class="form-control">
+                  <option value="">Pilih Mata Kuliah</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select id="semester" class="form-control">
+                  <option value="">Pilih Semester</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="tahun"
+                  placeholder="Tahun"
+                />
+              </div>
+
+              <input
+                type="button"
+                value="Update"
+                onclick="update_ngajar();"
+                class="btn btn-warning btn-user"
+              />
+              <input
+                type="button"
+                value="Delete"
+                onclick="delete_ngajar();"
+                class="btn btn-danger btn-user"
+              />
               <hr />
-    
-              <!-- Form -->
-              <form class="user">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="uid" placeholder="ID" readonly>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="kode" placeholder="Kode Dosen">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="nama" placeholder="Nama Dosen">
-                </div>
-                <input type="button" value="Update" onclick="update_dosen();" class="btn btn-warning btn-user" />
-                <input type="button" value="Delete" onclick="delete_dosen();" class="btn btn-danger btn-user" />
-                <hr>
-              </form>
-    
-              <!-- Table -->
-              <div class="card shadow mb-4">
-                               <div class="card-body">
-                  <div class="table-responsive">
-                    <table id="tb_dosen" class="table table-bordered" width="100%" cellspacing="0">
-                      <tr>
-                        <td>#ID</td>
-                        <td>Kode</td>
-                        <td>Nama</td>
-                      </tr>
-                    </table>
-                  </div>
+            </form>
+
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Information</h6>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="tb_mengajar"
+                    class="table table-bordered"
+                    width="100%"
+                    cellspacing="0"
+                  >
+                    <tr>
+                      <td>#ID</td>
+                      <td>Dosen</td>
+                      <td>Mata Kuliah</td>
+                      <td>Semester</td>
+                      <td>Tahun</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
-            <!-- /.container-fluid -->
-    
           </div>
-          <!-- End of Main Content -->
-    
-          <!-- Footer -->
-          <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-              <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Your Website 2019</span>
-              </div>
-            </div>
-          </footer>
-          <!-- End of Footer -->
+          <!-- /.container-fluid -->
         </div>
-        <!-- End of Content Wrapper -->
-      </div>
-      <!-- End of Page Wrapper -->
-    
-      <!-- Scroll to Top Button -->
-      <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-      </a>
-    
-      <!-- Logout Modal -->
-      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-              <a class="btn btn-primary" href="login.html">Logout</a>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2019</span>
             </div>
           </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
         </div>
       </div>
-    
-      <!-- JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    
-      <script>
-        var tbDosen = document.getElementById('tb_dosen');
-        var databaseRef = firebase.database().ref('dosen/');
-        var rowIndex = 1;
-    
-        databaseRef.once('value', function (snapshot) {
-          snapshot.forEach(function (childSnapshot) {
-            var childKey = childSnapshot.key;
-            var childData = childSnapshot.val();
-            var row = tbDosen.insertRow(rowIndex);
-            var cellId = row.insertCell(0);
-            var cellKode = row.insertCell(1);
-            var cellNama = row.insertCell(2);
-            cellId.textContent = childKey;
-            cellKode.textContent = childData.kode;
-            cellNama.textContent = childData.nama;
-            rowIndex++;
-          });
-    
-          var rows = tbDosen.getElementsByTagName("tr");
-          for (let i = 1; i < rows.length; i++) {
-            rows[i].onclick = function () {
-              document.getElementById('uid').value = this.cells[0].textContent;
-              document.getElementById('kode').value = this.cells[1].textContent;
-              document.getElementById('nama').value = this.cells[2].textContent;
-            };
-          }
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Firebase and CRUD Logic -->
+    <script>
+      var databaseRefDosen = firebase.database().ref("dosen/");
+      var databaseRefMK = firebase.database().ref("matakuliah/");
+      var databaseRef = firebase.database().ref("mengajar/");
+      var tbMengajar = document.getElementById("tb_mengajar");
+
+      // Load Dosen
+      databaseRefDosen.once("value", function (snapshot) {
+        snapshot.forEach(function (childSnapshot) {
+          var childData = childSnapshot.val();
+          var option = document.createElement("option");
+          option.text = childData.kode + " - " + childData.nama;
+          option.value = childData.kode;
+          document.getElementById("kode_dosen").add(option);
         });
-    
-        function update_dosen() {
-          var kode = document.getElementById('kode').value;
-          var nama = document.getElementById('nama').value;
-          var uid = document.getElementById('uid').value;
-          var data = { kode, nama };
-          var updates = {};
-          updates['/dosen/' + uid] = data;
-          firebase.database().ref().update(updates);
-          alert('Dosen updated successfully!');
-          reload_page();
-        }
-    
-        function delete_dosen() {
-          var uid = document.getElementById('uid').value;
-          firebase.database().ref('/dosen/' + uid).remove();
-          alert('Dosen deleted successfully!');
-          reload_page();
-        }
-    
-        function reload_page() {
-          window.location.reload();
-        }
-      </script>
-    </body>
+      });
+
+      // Load Mata Kuliah
+      databaseRefMK.once("value", function (snapshot) {
+        snapshot.forEach(function (childSnapshot) {
+          var childData = childSnapshot.val();
+          var option = document.createElement("option");
+          option.text = childData.kode + " - " + childData.nama;
+          option.value = childData.kode;
+          document.getElementById("kode_matakuliah").add(option);
+        });
+      });
+
+      // Load Mengajar Table
+      databaseRef.once("value", function (snapshot) {
+        var rowIndex = 1;
+        snapshot.forEach(function (childSnapshot) {
+          var childKey = childSnapshot.key;
+          var childData = childSnapshot.val();
+          var row = tbMengajar.insertRow(rowIndex++);
+
+          row.insertCell(0).appendChild(document.createTextNode(childKey));
+          row
+            .insertCell(1)
+            .appendChild(document.createTextNode(childData.kode_dosen));
+          row
+            .insertCell(2)
+            .appendChild(document.createTextNode(childData.kode_matakuliah));
+          row
+            .insertCell(3)
+            .appendChild(document.createTextNode(childData.semester));
+          row
+            .insertCell(4)
+            .appendChild(document.createTextNode(childData.tahun));
+
+          row.onclick = function () {
+            document.getElementById("uid").value = childKey;
+            document.getElementById("kode_dosen").value = childData.kode_dosen;
+            document.getElementById("kode_matakuliah").value =
+              childData.kode_matakuliah;
+            document.getElementById("semester").value = childData.semester;
+            document.getElementById("tahun").value = childData.tahun;
+          };
+        });
+      });
+
+      // Update Mengajar
+      function update_ngajar() {
+        var uid = document.getElementById("uid").value;
+        var data = {
+          kode_dosen: document.getElementById("kode_dosen").value,
+          kode_matakuliah: document.getElementById("kode_matakuliah").value,
+          semester: document.getElementById("semester").value,
+          tahun: document.getElementById("tahun").value,
+        };
+        var updates = {};
+        updates["/mengajar/" + uid] = data;
+        firebase.database().ref().update(updates);
+        alert("Mengajar updated successfully!");
+        reload_page();
+      }
+
+      // Delete Mengajar
+      function delete_ngajar() {
+        var uid = document.getElementById("uid").value;
+        firebase
+          .database()
+          .ref("/mengajar/" + uid)
+          .remove();
+        alert("Mengajar deleted successfully!");
+        reload_page();
+      }
+
+      // Reload Page
+      function reload_page() {
+        window.location.reload();
+      }
+    </script>
+  </body>
 </html>
